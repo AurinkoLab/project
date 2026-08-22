@@ -395,6 +395,32 @@
                     </div>
 
                     <div>
+                        <select id="how_did_you_hear" name="how_did_you_hear" required class="w-full rounded-lg px-4 py-3.5 transition-all">
+                            <option value="" disabled selected>How did you hear about us?</option>
+                            <option value="Google / Search">Google / Search</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Telegram Channel">Telegram Channel</option>
+                            <option value="Friend / Someone I know">Friend / Someone I know</option>
+                            <option value="School / Educational Institution">School / Educational Institution</option>
+                            <option value="EPICS IEEE">EPICS IEEE</option>
+                            <option value="Espoo Nuoriso">Espoo Nuoriso</option>
+                            <option value="AurinkoLab / Event">AurinkoLab / Event</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="source-details" class="hidden">
+                        <input
+                            type="text"
+                            id="source_details_input"
+                            name="source_details"
+                            class="w-full rounded-lg px-4 py-3.5 transition-all"
+                            placeholder=""
+                        >
+                    </div>
+
+                    <div>
                         <textarea name="motivation" rows="3" required class="w-full rounded-lg px-4 py-3.5 transition-all" placeholder="Short Motivation / Experience..."></textarea>
                     </div>
 
@@ -453,6 +479,29 @@
             link.addEventListener("click", () => menu.classList.add("hidden"));
         });
     }
+    const howDidYouHear = document.getElementById("how_did_you_hear");
+    const sourceDetails = document.getElementById("source-details");
+    const sourceDetailsInput = document.getElementById("source_details_input");
+
+    if (howDidYouHear && sourceDetails && sourceDetailsInput) {
+        howDidYouHear.addEventListener("change", () => {
+            if (howDidYouHear.value === "Telegram Channel") {
+                sourceDetails.classList.remove("hidden");
+                sourceDetailsInput.placeholder = "Telegram Channel Name or @username...";
+                sourceDetailsInput.required = true;
+            } else if (howDidYouHear.value === "Friend / Someone I know") {
+                sourceDetails.classList.remove("hidden");
+                sourceDetailsInput.placeholder = "Friend's Name...";
+                sourceDetailsInput.required = true;
+            } else {
+                sourceDetails.classList.add("hidden");
+                sourceDetailsInput.value = "";
+                sourceDetailsInput.required = false;
+            }
+        });
+    }
+
+    
 </script>
 
 </body>
