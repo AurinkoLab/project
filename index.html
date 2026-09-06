@@ -76,14 +76,33 @@
                     <span class="block text-[8px] tracking-[.3em] text-[#5C594E] uppercase -mt-1">Build • Tinker • Race</span></span>
                 </a>
 
-                <div class="hidden md:flex items-center space-x-8 font-semibold text-[#5C594E] text-sm">
+                <div class="hidden md:flex items-center space-x-5 lg:space-x-7 font-semibold text-[#5C594E] text-sm">
                     <a href="#about" class="hover:text-[#3A3831] transition-colors">Program</a>
-                    <a href="#details" class="hover:text-[#3A3831] transition-colors">Location & Schedule</a>
+                    <a href="#details" class="hover:text-[#3A3831] transition-colors">Location &amp; Schedule</a>
                     <a href="#team" class="hover:text-[#3A3831] transition-colors">Team</a>
+                    <a href="./skills-check/index.html" class="hover:text-[#3A3831] transition-colors">Skills Check</a>
                     <a href="#apply" class="bg-[#EBE7D9] hover:bg-[#D8D3C4] border border-[#D8D3C4] text-[#3A3831] px-6 py-3 rounded-xl font-bold transition-all">
                         Apply Now
                     </a>
                 </div>
+
+                <!-- Mobile hamburger -->
+                <button id="menu-btn" class="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none" aria-label="Open menu" aria-expanded="false">
+                    <span class="block w-8 h-0.5 bg-[#3A3831] transition-all duration-300"></span>
+                    <span class="block w-8 h-0.5 bg-[#3A3831] transition-all duration-300"></span>
+                    <span class="block w-8 h-0.5 bg-[#3A3831] transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#F4F2EA] border-b border-[#D8D3C4] absolute w-full">
+            <div class="flex flex-col space-y-4 p-6 font-semibold text-[#5C594E]">
+                <a href="#about" class="hover:text-[#3A3831]">Program</a>
+                <a href="#details" class="hover:text-[#3A3831]">Location &amp; Schedule</a>
+                <a href="#team" class="hover:text-[#3A3831]">Team</a>
+                <a href="skills-check/index.html" class="hover:text-[#3A3831]">Skills Check</a>
+                <a href="#apply" class="bg-[#EBE7D9] text-[#3A3831] border border-[#D8D3C4] px-4 py-3 rounded-xl text-center">Apply Now</a>
             </div>
         </div>
     </nav>
@@ -105,6 +124,9 @@
                 </a>
                 <a href="#about" class="w-full sm:w-auto bg-transparent border border-[#3A3831] text-[#3A3831] hover:bg-[#3A3831] hover:text-[#F4F2EA] font-bold px-8 py-4 rounded-xl transition-all">
                     See What We Build
+                </a>
+                <a href="skills-check/index.html" class="w-full sm:w-auto bg-transparent border border-[#D8D3C4] text-[#5C594E] hover:border-[#3A3831] hover:text-[#3A3831] font-bold px-8 py-4 rounded-xl transition-all">
+                    Skills Check
                 </a>
             </div>
 
@@ -151,21 +173,24 @@
                     <p class="text-sm text-[#827D70] mt-3">Weekly sessions in Espoo (except public holidays).</p>
                 </div>
 
-        <div>
-            <div class="text-2xl font-bold heading-font">
-                <span class="text-[#3A3831]">€130</span> 
-                <span class="text-[#827D70]">/</span> 
-                <span class="text-emerald-600">€110</span>
+            <div>
+                <div class="text-2xl font-bold heading-font flex items-baseline flex-wrap gap-1">
+                    <div>
+                        <span class="text-[#3A3831]">€130</span> 
+                        <span class="text-[#827D70]">/</span> 
+                        <span class="text-emerald-600">€110</span>
+                    </div>
+                    <span class="text-sm font-normal text-[#827D70]">per month</span>
+                </div>
+                
+                <div class="text-xs uppercase tracking-wider font-bold text-[#5C594E] mt-1">
+                    Standard / Early Birds Course Fee (till 15.08.2026)
+                </div>
+                
+                <p class="text-sm text-[#827D70] mt-3">
+                    2 discounted places for €80 per month for unemployed, students or community members.
+                </p>
             </div>
-            
-            <div class="text-xs uppercase tracking-wider font-bold text-[#5C594E] mt-1">
-                Standard / Early Birds Course Fee (till 15.08.2026)
-            </div>
-            
-            <p class="text-sm text-[#827D70] mt-3">
-                2 discounted places for €80 for unemployed, students or community members.
-            </p>
-        </div>
             </div>
         </div>
     </section>
@@ -264,6 +289,53 @@
     </section>
 
     <!-- Application Form Section -->
+    <!-- Skills Check -->
+    <section id="skills-check" class="py-12 px-6 max-w-7xl mx-auto reveal">
+        <div class="bg-[#3A3831] text-[#F4F2EA] rounded-3xl p-8 md:p-12">
+            <div class="grid lg:grid-cols-5 gap-10 items-center">
+
+                <div class="lg:col-span-3">
+                    <span class="inline-block bg-[#F4F2EA]/10 border border-[#F4F2EA]/25 px-4 py-1.5 rounded-full text-[10px] font-extrabold tracking-[.18em] uppercase mb-5">
+                        Before the build starts
+                    </span>
+                    <h2 class="heading-font text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                        Try the Skills Check
+                    </h2>
+                    <p class="text-[#F4F2EA]/80 leading-relaxed mb-4">
+                        Have a go at reading a real drawing from the project — the steering column bracket, four of which go into every kart we build. Fifteen questions, at your own pace, at home.
+                    </p>
+                    <p class="text-[#F4F2EA]/80 leading-relaxed mb-7">
+                        <strong class="text-[#F4F2EA]">It is not an exam and you cannot fail it.</strong> We only want to know what each person already knows, so nobody spends the first week bored and nobody spends it lost. No previous experience with tools is needed.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mb-8 text-[10px] font-extrabold tracking-[.16em] uppercase text-[#F4F2EA]/65">
+                        <span class="border border-[#F4F2EA]/25 px-3 py-1.5 rounded-full">A ruler</span>
+                        <span class="border border-[#F4F2EA]/25 px-3 py-1.5 rounded-full">Paper &amp; pencil</span>
+                        <span class="border border-[#F4F2EA]/25 px-3 py-1.5 rounded-full">About 20 minutes</span>
+                    </div>
+
+                    <a href="skills-check/index.html" class="inline-block bg-[#F4F2EA] hover:bg-[#EBE7D9] text-[#3A3831] font-bold px-8 py-4 rounded-xl transition-all">
+                        Open the Skills Check &rarr;
+                    </a>
+                </div>
+
+                <div class="lg:col-span-2 grid sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                    <a href="./skills-check/drawing-AL-GK-02.html" class="block bg-[#F4F2EA]/5 hover:bg-[#F4F2EA]/10 border border-[#F4F2EA]/20 hover:border-[#F4F2EA]/45 rounded-2xl p-6 transition-all">
+                        <span class="text-[10px] font-extrabold tracking-[.18em] uppercase text-[#F4F2EA]/55">Step 1</span>
+                        <h3 class="heading-font text-xl font-bold mt-2 mb-1">The drawing</h3>
+                        <p class="text-sm text-[#F4F2EA]/70">Drawing AL-GK-02 — a real part, drawn the way engineers draw.</p>
+                    </a>
+                    <a href="skills-check/questions-AL-GK-02.html" class="block bg-[#F4F2EA]/5 hover:bg-[#F4F2EA]/10 border border-[#F4F2EA]/20 hover:border-[#F4F2EA]/45 rounded-2xl p-6 transition-all">
+                        <span class="text-[10px] font-extrabold tracking-[.18em] uppercase text-[#F4F2EA]/55">Step 2</span>
+                        <h3 class="heading-font text-xl font-bold mt-2 mb-1">The questions</h3>
+                        <p class="text-sm text-[#F4F2EA]/70">Fifteen questions in four parts, with a way to check your own answers.</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="apply" class="py-16 px-6 max-w-5xl mx-auto reveal">
         <div class="grid md:grid-cols-2 gap-12 items-center">
             
@@ -276,6 +348,9 @@
                     <h2 class="heading-font text-3xl font-bold text-[#3A3831] mb-2">Registration Form</h2>
                     <p class="text-[#5C594E] text-sm">
                         Only 6 spots available for participants aged 12–16. Please submit the form below.
+                    </p>
+                    <p class="text-[#827D70] text-xs mt-2">
+                        Applying takes a minute. The <a href="./skills-check/index.html" class="text-[#3A3831] font-semibold underline decoration-[#D8D3C4] underline-offset-2">Skills Check</a> comes after — it is preparation, not a filter.
                     </p>
                 </div>
 
@@ -314,6 +389,41 @@
                     </div>
 
                     <div>
+                        <select name="skills_check" class="w-full rounded-lg px-4 py-3.5 transition-all">
+                            <option value="" disabled selected>Have you tried the Skills Check? (optional)</option>
+                            <option value="Finished">Yes, I worked through all of it</option>
+                            <option value="Partly">Yes, I got partway</option>
+                            <option value="Not yet">Not yet</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select id="how_did_you_hear" name="how_did_you_hear" required class="w-full rounded-lg px-4 py-3.5 transition-all">
+                            <option value="" disabled selected>How did you hear about us?</option>
+                            <option value="Google / Search">Google / Search</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Telegram Channel">Telegram Channel</option>
+                            <option value="Friend / Someone I know">Friend / Someone I know</option>
+                            <option value="School / Educational Institution">School / Educational Institution</option>
+                            <option value="EPICS IEEE">EPICS IEEE</option>
+                            <option value="Espoo Nuoriso">Espoo Nuoriso</option>
+                            <option value="AurinkoLab / Event">AurinkoLab / Event</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div id="source-details" class="hidden">
+                        <input
+                            type="text"
+                            id="source_details_input"
+                            name="source_details"
+                            class="w-full rounded-lg px-4 py-3.5 transition-all"
+                            placeholder=""
+                        >
+                    </div>
+
+                    <div>
                         <textarea name="motivation" rows="3" required class="w-full rounded-lg px-4 py-3.5 transition-all" placeholder="Short Motivation / Experience..."></textarea>
                     </div>
 
@@ -331,7 +441,8 @@
         <div class="max-w-7xl mx-auto space-y-3">
             <p class="font-semibold text-[#5C594E]">&copy; 2026 AurinkoLab Espoo.</p>
             <p class="text-xs">Mankaan Makasiini / Aalto Design Factory, Espoo, Finland.</p>
-            <p class="text-xs">* “Go fast” comes after “be safe”.</p>
+            <p class="text-xs">* &#8220;Go fast&#8221; comes after &#8220;be safe&#8221;.</p>
+            <p class="text-xs"><a href="./skills-check/index.html" class="underline decoration-[#D8D3C4] underline-offset-2 hover:text-[#3A3831]">Skills Check</a> &#183; preparation material for applicants</p>
             <div class="pt-2 text-xs font-medium flex justify-center items-center gap-4">
                 <span>Supported by <strong>EPICS IEEE</strong></span>
                 <span>•</span>
@@ -352,6 +463,48 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile menu toggle
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    if (btn && menu) {
+        const lines = btn.querySelectorAll("span");
+        btn.addEventListener("click", () => {
+            const opened = menu.classList.toggle("hidden");
+            btn.setAttribute("aria-expanded", String(!opened));
+            lines[0].classList.toggle("rotate-45");
+            lines[0].classList.toggle("translate-y-2");
+            lines[1].classList.toggle("opacity-0");
+            lines[2].classList.toggle("-rotate-45");
+            lines[2].classList.toggle("-translate-y-2");
+        });
+        menu.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => menu.classList.add("hidden"));
+        });
+    }
+    const howDidYouHear = document.getElementById("how_did_you_hear");
+    const sourceDetails = document.getElementById("source-details");
+    const sourceDetailsInput = document.getElementById("source_details_input");
+
+    if (howDidYouHear && sourceDetails && sourceDetailsInput) {
+        howDidYouHear.addEventListener("change", () => {
+            if (howDidYouHear.value === "Telegram Channel") {
+                sourceDetails.classList.remove("hidden");
+                sourceDetailsInput.placeholder = "Telegram Channel Name or @username...";
+                sourceDetailsInput.required = true;
+            } else if (howDidYouHear.value === "Friend / Someone I know") {
+                sourceDetails.classList.remove("hidden");
+                sourceDetailsInput.placeholder = "Friend's Name...";
+                sourceDetailsInput.required = true;
+            } else {
+                sourceDetails.classList.add("hidden");
+                sourceDetailsInput.value = "";
+                sourceDetailsInput.required = false;
+            }
+        });
+    }
+
+    
 </script>
 
 </body>
